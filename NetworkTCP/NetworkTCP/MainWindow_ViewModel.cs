@@ -316,6 +316,7 @@ namespace NetworkTCP
                             }
                             catch (SocketException) { }
                             catch (IOException) { }
+                            catch (ThreadAbortException) { }
                             catch (Exception ex)
                             {
                                 ClientOutput += ex.Message + "\n";
