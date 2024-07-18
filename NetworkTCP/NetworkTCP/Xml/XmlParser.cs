@@ -32,6 +32,11 @@ namespace NetworkTCP.Xml
         public string TextBoxForegroundColor { get; set; }
         #endregion
 
+        public SavedData()
+        {
+            SentReceivedSymbol = true;
+            ShowTimeStamp = true;
+        }
     }
 
     public class XmlParser
@@ -77,8 +82,8 @@ namespace NetworkTCP.Xml
                 {
                     SavedData = new SavedData()
                     {
-                        SentReceivedSymbol = false,
-                        ShowTimeStamp = false,
+                        SentReceivedSymbol = true,
+                        ShowTimeStamp = true,
                         ServerPort = 5000,
                         ClientIP = "127.0.0.1",
                         ClientPort = 5000,
@@ -105,8 +110,8 @@ namespace NetworkTCP.Xml
 
         public void SetDefault()
         {
-            SavedData.SentReceivedSymbol = false;
-            SavedData.ShowTimeStamp = false;
+            SavedData.SentReceivedSymbol = true;
+            SavedData.ShowTimeStamp = true;
             SavedData.ServerPort = 5000;
             SavedData.ClientIP = "127.0.0.1";
             SavedData.ClientPort = 5000;

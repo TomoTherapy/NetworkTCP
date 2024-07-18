@@ -27,7 +27,7 @@ namespace NetworkTCP
             Sample_textBlock.Text = "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, " +
                 "it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. " +
                 "It always protects, always trusts, always hopes, always perseveres. Love never fails. But where there are prophecies, they will cease; " +
-                "where there are tongues, they will be stilled; where there is knowledge, it will pass awasy.\nCorinthians 13:4 - 8";
+                "where there are tongues, they will be stilled; where there is knowledge, it will pass away.\nCorinthians 13:4 - 8";
         }
 
         private void ServerSend_button_Click(object sender, RoutedEventArgs e)
